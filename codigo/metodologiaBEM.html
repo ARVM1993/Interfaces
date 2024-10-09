@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative; 
+            width: 100%; 
+        }
+
+        nav.navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px; 
+            background-color: green;
+            padding: 20px;
+            text-align: left;
+            height: 100vh;
+        }
+
+        ul.sidebar__menu {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        li.sidebar__item {
+            margin: 10px 0;
+        }
+
+        a.sidebar__link {
+            text-decoration: none;
+            color: white;
+            display: block; 
+            padding: 10px; 
+            border-radius: 4px; 
+            transition: background-color 0.3s; 
+        }
+
+        a.sidebar__link:hover {
+            background-color: darkgreen; 
+            display: none;
+        }
+
+        aside.articulo {
+            position: relative; 
+            margin-left: 220px; 
+            background-color: lightgray;
+            padding: 20px;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item sidebar__item--active">
+                    <a href="#" class="sidebar__link">Home</a>
+                    <span class="sidebar__info">text info</span>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">News</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">Contact</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <aside class="articulo">
+            <div class="articulo__contenido">
+                <h2 class="articulo__titulo">Responsive Sidenav Example</h2>
+                <p>
+                    This example uses media queries to transform the sidenav to a top
+                    navigation bar when the screen size is 900px or less. We have also added a media query for 
+                    screens that are 400px or less, which will vertically stack and center the navigation links.
+                    You will learn more about media queries and responsive web design later in our CSS Tutorial.
+                </p>
+                <h3 class="articulo__titulo--subtitulo">Resize the browser window to see the effect</h3>
+            </div>
+        </aside>
+    </div>
+    
+</body>
+</html>

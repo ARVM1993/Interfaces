@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        
+        }
+
+        header, footer{
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .contenido{
+            flex-grow: 1;
+            position: relative;
+            background-color: pink;
+
+        }
+
+        .cuadrado{
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        .cuadradito {
+            width: 75px;
+            height: 75px;
+            background-color: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado</h1>
+    </header>
+    
+    
+    <div class="contenido">
+        <div class="cuadrado">
+            <div class="cuadradito"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Pie de pagina</p>
+    </footer>
+</body>
+</html>

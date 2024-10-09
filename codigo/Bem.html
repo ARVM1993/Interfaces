@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+ 
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background-color: #1ea535;
+            padding-top: 20px;
+        }
+
+        .sidebar__menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar__item {
+            margin-bottom: 10px;
+            position: relatve; 
+        }
+
+        .sidebar__link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        .sidebar__link:hover {
+            background-color: #23611f;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar__info {
+            display: none;
+            position: absolute;
+            left: 190px;
+            top: 0px;
+            color: #000000;
+            background-color: #c5c1c1;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .sidebar__item--action:hover .sidebar__info {
+            display: inline-block;
+        }
+
+        .content {
+            position: absolute;
+            left: 220px; 
+            top: 250px;
+            padding: 20px;
+            height: auto;
+        }
+
+        
+    </style>
+</head>
+<body>   
+    <nav class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__item sidebar__item--action">
+                <a href="#" class="sidebar__link">Home</a>
+                <span class="sidebar__info">text info</span>
+            </li>
+            <li class="sidebar__item">
+                <a href="#" class="sidebar__link">News</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Contact</a>
+            </li>
+                <li class="sidebar__item">
+                <a href="#" class="sidebar__link">About</a>
+            </li>
+        </ul>
+    </nav>
+    <aside class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit. Aut autem iure odio iusto! Dolore omnis
+        repudiandae quam provident consequuntur veniam
+        pariatur, nostrum numquam, eius qui est ex
+        consectetur quibusdam modi.
+    </aside>
+</body>
+</html>
