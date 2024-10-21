@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contenedor1 {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        overflow: scroll;
+        border: 10px solid brown;
+    }
+
+    .contenedor2 {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        overflow: hidden;
+    }
+
+    .foto {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid brown;
+        left: 15px;
+    }
+
+    .foto img {
+        position: relative;
+        transition: transform 4s ease;
+    }
+
+    .foto:hover img {
+        transform: translate(-30px, -30px);
+    }
+</style>
+<body>
+
+    <div class="contenedor1">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+        
+    </div>
+    <br>
+
+    <div class="contenedor2">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+       um iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
+        nulla pariatur?"
+    </div>
+    <br>
+
+    <div class="foto">
+        <a href="fotografia">
+            <img src="./foto/salir guapo en fotos-605380757.webp" alt="Image" width="150" height="150">
+        </a>
+    </div>
+
+</body>
+</html>
