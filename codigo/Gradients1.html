@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        .linear-gradient {
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(90deg, red, blue);
+            /* 90deg: horizontal, rojo a la izquierda y azul a la derecha */
+        }
+
+        .angled-gradient {
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(45deg, red, yellow, green);
+            /* 45deg: diagonal, pasando por rojo, amarillo y verde */
+        }
+
+        .multi-stop-gradient {
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(to right, red 0%, yellow 50%, green 100%);
+            /* Gradiente multicolor con paradas en diferentes puntos */
+        }
+    </style>
+</head>
+<body>
+    <h2>Linear Gradient (90°)</h2>
+    <div class="linear-gradient"></div>
+
+    <h2>Diagonal Gradient (45°)</h2>
+    <div class="angled-gradient"></div>
+
+    <h2>Multi-stop Gradient</h2>
+    <div class="multi-stop-gradient"></div>
+</body>
+</html>
