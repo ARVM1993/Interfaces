@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center; /* Centra el contenido en el body */
+            margin: 0; /* Elimina márgenes del body */
+            padding: 20px; /* Espaciado alrededor del contenido */
+        }
+        .parrafo1, .parrafo2 {
+            display: inline-block; /* Permite que se alineen horizontalmente */
+            width: 45%; /* Ancho para ambos párrafos */
+            padding: 10px;
+            border: 1px solid #ccc; /* Borde opcional */
+            border-radius: 5px; /* Esquinas redondeadas opcional */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+            vertical-align: top; /* Alineación vertical en la parte superior */
+        }
+        h1 {
+            color: #333; /* Color del texto del título */
+        }
+        p {
+            margin: 0; /* Elimina márgenes de los párrafos */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+        @media only screen and (max-width: 800px) {
+            .parrafo1, .parrafo2 {
+                width: 90%; /* Ancho completo en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parrafo1">
+        <h1>Titulo Parrafo 1</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div class="parrafo2">
+        <h1>Titulo Parrafo 2</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+</body>
+</html>
