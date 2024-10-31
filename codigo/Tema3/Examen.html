@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            padding: 20px;
+        }
+
+        .caja{
+            background-color: rgb(175, 57, 136); 
+            border: none; 
+            padding: 10px; 
+            border-radius: 5px; 
+            width: 100%; 
+        }
+
+        input, textarea {
+            background-color: rgb(175, 57, 136); 
+            border: none; 
+            border-radius: 5px; 
+            width: 100%; 
+            background: linear-gradient(to top, gray);
+        }
+
+        .container {
+            display: flex; 
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            
+        }
+
+        .container__image {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 10px; 
+            margin-left: 15px;
+            border-radius: 15px; 
+            width: 300px; 
+            height: 250px; 
+        }
+
+        .container__form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; 
+            flex: 1; 
+        }
+
+        .form__input-field {
+            margin-bottom: 20px; 
+            border-bottom: 2px solid pink; 
+            color: white;
+        }
+
+        .form__input-field::placeholder {
+            
+            color: white;
+        }
+
+        .form__input-field:hover {
+            background-color: rgba(255, 192, 203, 0.7);
+        }
+
+        .form__input-field:focus {
+            border-bottom: 2px solid white;
+            background-color: gray; 
+        }
+
+        .form__submit-button {
+            padding: 10px; 
+            background-color: blue; 
+            color: white;
+            border: none; 
+            border-radius: px;
+            border-bottom: 2px solid pink; 
+        }
+
+        .form__submit-button:hover {
+            background-color: darkblue; 
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .container__image {
+                margin-right: 0; 
+                margin-bottom: 20px; 
+                width: 80%; 
+            }
+
+            .container__form {
+                width: 80%; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form__input-field {
+                padding: 10px; 
+            }
+
+            .form__submit-button {
+                padding: 8px; 
+            }
+        }
+        textarea{
+            background: linear-gradient(to top, grey, rgba(129,154,201,0));
+
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+    <div class="container">
+        <img src="../fotos/fondo-horizonte-futurista-rosa_23-2148335035.avif" alt="Imagen de ejemplo" class="container__image"> <!-- Cambia la URL por la de tu imagen -->
+        <div class="container__form">
+            <input type="text" class="form__input-field" placeholder="Nombre">
+            <input type="email" class="form__input-field" placeholder="Correo electrónico">
+            <textarea class="form__input-field" placeholder="Comentarios" rows="7"></textarea>
+            <button type="submit" class="form__submit-button">Aceptar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

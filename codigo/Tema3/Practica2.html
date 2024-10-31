@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Formulario</title>
+    <style>
+        body {
+            background-color: pink; /* Color de fondo rosa */
+            margin: 0; /* Sin margen en el body */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            display: flex; /* Usar flexbox para disposición */
+            padding: 20px; /* Espaciado interno */
+        }
+
+        .container {
+            display: flex; /* Contenedor flex para imagen y formulario */
+            align-items: flex-start; /* Alinear los elementos en la parte superior */
+        }
+
+        .container__image {
+            margin-right: 20px; /* Margen entre la imagen y el formulario */
+            border-radius: 15px; /* Esquinas redondeadas */
+            width: 300px; /* Ancho de la imagen */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        .container__form {
+            display: flex;
+            flex-direction: column; /* Disposición vertical */
+        }
+
+        .form__input-field {
+            margin-bottom: 15px; /* Espacio entre los campos de entrada */
+            padding: 10px; /* Espaciado interno en los campos */
+            border: none; /* Sin bordes */
+            border-bottom: 2px solid pink; /* Línea inferior rosa */
+            border-radius: 0; /* Sin esquinas redondeadas */
+            background-color: pink; /* Color de fondo rosa para los campos */
+            transition: background-color 0.3s, border-bottom-color 0.3s; /* Efecto de transición para el color de fondo y el borde */
+            outline: none; /* Sin contorno al enfocar el campo */
+        }
+
+        .form__input-field:hover {
+            background-color: rgba(255, 192, 203, 0.7); /* Efecto de sombreado al pasar el ratón (rosa claro) */
+        }
+
+        .form__input-field:focus {
+            outline: none; /* Eliminar el contorno al enfocar */
+            border-bottom: 2px solid white; /* Cambiar el borde inferior a blanco al hacer clic */
+        }
+
+        .form__submit-button {
+            padding: 10px; /* Espaciado interno en el botón */
+            background-color: blue; /* Color de fondo del botón */
+            color: white; /* Color del texto */
+            border: none; /* Sin bordes */
+            border-radius: 5px; /* Esquinas redondeadas */
+            cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+            transition: background-color 0.3s; /* Efecto de transición para el color de fondo */
+        }
+
+        .form__submit-button:hover {
+            background-color: darkblue; /* Color del botón al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../fotos/fondo-horizonte-futurista-rosa_23-2148335035.avif" alt="Imagen de ejemplo" class="container__image"> <!-- Cambia la URL por la de tu imagen -->
+        <div class="container__form">
+            <input type="text" class="form__input-field" placeholder="Nombre">
+            <input type="email" class="form__input-field" placeholder="Correo electrónico">
+            <textarea class="form__input-field" placeholder="Comentarios" rows="4"></textarea>
+            <button type="submit" class="form__submit-button">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

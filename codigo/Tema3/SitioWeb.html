@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            background-color: rgb(52, 118, 204);
+            height: 50px;
+            padding: 0 20px;
+        }
+
+        .contenedor-izquierdo {
+            color: white;
+            font-weight: bold;
+        }
+
+        .contenedor-derecho {
+            display: flex;
+            gap: 10px;
+        }
+
+        .contenedor-derecho div {
+            color: white;
+        }
+
+        .grande {
+            display: flex; 
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        .cuadrado-texto-izq {
+            flex: 2;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .cuadrado-texto-der {
+            flex: 1; 
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .Bienvenido {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .Noticias{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(52, 118, 204);
+            height: 50px;
+            padding: 0 20px;
+        }
+
+        .copyright {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor-izquierdo">Mi Sitio Web</div>
+        <div class="contenedor-derecho">
+            <div class="inicio">Inicio</div>
+            <div class="sobre">Sobre mí</div>
+            <div class="servicios">Servicios</div>
+            <div class="contacto">Contacto</div>
+        </div>
+    </header>
+
+    <div class="grande">
+        <div class="cuadrado-texto-izq">
+            <div class="Bienvenido">Bienvenido</div>
+            <div class="frase">Este es un ejemplo de práctica usando Flexbox y BEM</div>
+        </div>
+        <div class="cuadrado-texto-der">
+            <div class="Noticias">Noticias</div>
+            <div class="Noticias1">Noticias 1</div>
+            <div class="Noticias2">Noticias 2</div>
+            <div class="Noticias3">Noticias 3</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">© 2024 Mi sitio web</div>
+    </footer>
+</body>
+</html>
