@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS Grid</title>
+    <style>
+        /* Contenedor de la cuadrícula */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* 2 columnas: la primera de 200px y la segunda flexible */
+            grid-template-rows: auto 1fr auto; /* 3 filas: encabezado, contenido flexible, pie */
+            gap: 10px; /* Espacio entre elementos */
+            height: 100vh; /* Altura de la pantalla completa */
+        }
+
+        /* Especificar el área de cada sección */
+        .header {
+            grid-column: 1 / -1; /* Toma ambas columnas */
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .main {
+            background-color: #e2e2e2;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-column: 1 / -1; /* Toma ambas columnas */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">Encabezado</div>
+    <div class="sidebar">Barra Lateral</div>
+    <div class="main">Contenido Principal</div>
+    <div class="footer">Pie de Página</div>
+</div>
+
+</body>
+</html>
