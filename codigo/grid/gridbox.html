@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgb(19, 160, 179);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            height: 20vh;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            height: 100%;
+        }
+
+        main {
+            background-color: orange;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        aside {
+            background-color: pink;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: greenyellow;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                background-color: orange;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            aside {
+                background-color: pink;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Con Grid</header>
+    <div class="content">
+        <main>Main</main>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
