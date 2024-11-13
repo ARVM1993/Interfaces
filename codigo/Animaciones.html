@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: solid;
+            border-color: black;
+            margin: 25px;
+            animation-name: movimiento;
+            animation-duration: 5s;
+            animation-fill-mode: backwards;
+            position: relative;
+            transform: rotate(-10deg);
+            clip-path: polygon(99% 0%, 67% 65%, 100% 100%, 25% 100%, 30% 68%, 0% 55%);
+        }
+
+        @keyframes movimiento {
+            0% {
+                left: 0;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: yellow;
+            }
+            100% {
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="movimiento"></div>
+</body>
+</html>
