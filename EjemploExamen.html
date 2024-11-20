@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center; 
+            height: 100vh; 
+            background: linear-gradient(45deg, violet, rgb(81, 81, 161)); /* Gradiente de fondo */
+        }
+
+        header {
+            height: 50px;
+            background-color: rgb(0, 66, 209);
+            color: white;
+            font-weight: bold;
+            width: 100%; /* El header ocupa todo el ancho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contendor {
+            height: 80%; 
+            width: 70%;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: row; 
+        }
+
+        li {
+            margin: 1px;
+            padding: 10px;
+            border: solid;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer; 
+        }
+
+        li:hover {
+            background-color: red; 
+            color: white; 
+        }
+
+        li.active {
+            background-color: red;
+            color: white;
+        }
+
+        footer {
+            height: 50px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            width: 100%; /* El footer ocupa todo el ancho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .contendor {
+                width: 90%; /* Aumentamos el ancho del contenedor en pantallas pequeñas */
+                padding: 15px;
+            }
+
+            ul {
+                flex-direction: column; /* Cambia los elementos de la lista a columna */
+                align-items: center; /* Alinea los elementos al centro */
+                padding: 0;
+            }
+
+            li {
+                margin: 5px 0; /* Espaciado entre los elementos */
+                width: 100%; /* Los elementos de la lista ocuparán todo el ancho disponible */
+                text-align: center; /* Centra el texto dentro de los elementos */
+                
+            }
+
+            header {
+                font-size: 14px; /* Reduce el tamaño de la fuente del header */
+            }
+
+            footer {
+                font-size: 14px; /* Reduce el tamaño de la fuente del footer */
+            }
+        }
+
+        /* Media Queries para pantallas muy pequeñas (smartphones en modo retrato) */
+        @media (max-width: 480px) {
+            header, footer {
+                font-size: 12px; /* Reduce aún más el tamaño del texto */
+            }
+
+            .contendor {
+                padding: 10px;
+                width: 95%; /* Aumenta el tamaño del contenedor al 95% en pantallas pequeñas */
+            }
+
+            ul {
+                flex-direction: column; /* Lista en columna */
+            }
+
+            li {
+                width: 100%; /* Hace que los elementos de la lista ocupen todo el ancho */
+                font-size: 14px; /* Ajusta el tamaño de la fuente */
+                padding: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Titulo del Sitio</header>
+
+    <div class="contendor">
+        <span>Contenido Principal</span>
+
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+        </ul>
+    </div>
+
+    <footer>Redes sociales</footer>

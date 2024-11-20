@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px); 
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.grid-item {
+    border: solid;
+}
+
+.grid-item:first-child {
+    grid-column: span 2;
+    grid-row: span 3; 
+}
+
+.grid-item:nth-child(2) {
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(4) {
+    grid-row: span 1;
+    height: 200px;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(7),
+.grid-item:nth-child(8),
+.grid-item:nth-child(9),
+.grid-item:nth-child(10),
+.grid-item:nth-child(11),
+.grid-item:nth-child(12) {
+    height: 100px;
+}
+
+.grid-item:nth-child(13) {
+    grid-column: span 3;
+    height: 100px;
+}
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Elemento 1</div>
+        <div class="grid-item">Elemento 2</div>
+        <div class="grid-item">Elemento 3</div>
+        <div class="grid-item">Elemento 4</div>
+        <div class="grid-item">Elemento 5</div>
+        <div class="grid-item">Elemento 6</div>
+        <div class="grid-item">Elemento 7</div>
+        <div class="grid-item">Elemento 8</div>
+        <div class="grid-item">Elemento 9</div>
+        <div class="grid-item">Elemento 10</div>
+        <div class="grid-item">Elemento 11</div>
+        <div class="grid-item">Elemento 12</div>
+        <div class="grid-item">Elemento 13</div>
+    </div>
+</body>
+</html>
