@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 4fr; 
+            height: 99vh;
+        }
+
+        aside{
+            background-color: #2c9b0a;
+            display: flex;
+            justify-items:center;            
+        }
+        
+        main{
+            background-color: #f0f0f0;
+        }
+
+      
+        li{
+            padding: 10px;
+            list-style: none;
+            color: white;
+            position: relative;
+            left: -50%;
+        }
+
+        li {
+        list-style: none;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px; 
+        }
+
+        li:hover {
+        background-color: blue;
+        color: brown;
+        }
+
+        li:active {
+        background-color: #155d27; /* Fondo aún más oscuro cuando se hace clic */
+        }
+
+     
+    </style>
+</head>
+<body>
+
+    <aside>
+        <ul class="lista">
+            <li class="lista--boton__home">Home</li>
+            <li class="lista--boton__news">News</li>
+            <li class="lista--boton__contact">Contact</li>
+            <li class="lista--boton__about">About</li>
+        </ul>
+    </aside>
+
+    <main>
+        Main content goes here.
+    </main>
+
+</body>
+</html>

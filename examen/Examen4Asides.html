@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid y Flex Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .header, .footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 1rem;
+        flex: 1; /* Asegura que crezca para ocupar el espacio restante */
+    }
+
+    .container__main {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container__aside {
+        display: grid;
+        grid-template-rows: 1fr 1fr; /* Divide el aside en dos filas horizontales */
+        gap: 1rem;
+        background-color: #6c757d;
+        color: white;
+        padding: 1rem;
+    }
+
+    .container__aside-top {
+        background-color: #495057;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .container__aside-bottom {
+        background-color: #343a40;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+        }
+
+        .container__aside,
+        .container__main {
+            flex: 1; /* Todos los elementos ocupan la misma altura */
+            padding-top: 100px; /* Ajuste de padding para reducir el tamaño */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Cambia a disposición en columna */
+        }
+    }
+</style>
+
+<body>
+    <header class="header">Header</header>
+    <div class="container">
+        <aside class="container__aside">
+            <div class="container__aside-top">Aside Left Top</div>
+            <div class="container__aside-bottom">Aside Left Bottom</div>
+        </aside>
+        <main class="container__main">Main Content</main>
+        <aside class="container__aside">
+            <div class="container__aside-top">Aside Right Top</div>
+            <div class="container__aside-bottom">Aside Right Bottom</div>
+        </aside>
+    </div>
+    <footer class="footer">Footer</footer>
+</body>
+</html>
