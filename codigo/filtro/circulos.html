@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .contenedor {
+            filter: contrast(20);
+            background: #fff;
+            
+        }
+
+        .caja {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, violet, rgb(0, 255, 191));
+            margin: 40px;
+            border-radius: 50%;
+            filter: blur(10px);            
+            
+        }
+        
+        .caja:first-child {
+            animation: pegajoso 4s alternate infinite;
+            
+        }
+
+    
+        @keyframes pegajoso {
+            0% {
+             transform: translate(0);
+            }
+            100% {
+          transform: translate(160px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja"></div>
+        <div class="caja"></div>
+    </div>
+</body>
+</html>

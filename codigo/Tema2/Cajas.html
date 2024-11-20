@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            
+        }
+        h2{
+            display: inline-block;
+            height: 100px;
+            background-color: red;
+            border:5px, solid;
+
+            
+        }
+
+        b{
+            display: block;
+            background-color: greenyellow;
+            border: 5px, solid;
+        }
+
+        .caja1{
+            padding: 20px;
+            display: inline-block;
+            width: 70%;
+            float: left;
+            background-color: red;
+
+        }
+        .caja2{
+            padding: 20px;
+            width: 100px;
+            float: left;
+            background-color: yellow;
+
+        }
+
+        .box1{
+            background:blue;
+            width: 250px;
+            height: 250px;
+            border: 10px solid red;
+            padding: 10px;
+        }
+
+        .box2{
+            background: blue;
+            width: 250px;
+            height: 250px;
+            border: 10px dashed red;
+            padding: 10px;
+
+        }
+        h3{
+            border: 5px solid black; 
+            border-radius: 20px; 
+            font-size: 30px; 
+            text-align: center; 
+            margin: 30px 50px; 
+            text-shadow: 30px 20px 10px #fff, 10px 5px 5px #000;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .caja{
+            background-color: green;
+            font-size: 30px;
+            border-radius: 2em;
+            text-align: center;
+            margin-top: 40px 50px;
+            transform: rotate(-20deg);
+            padding: 20px, 40px;
+            box-shadow: 10px 10px 20px black;
+            font-weight: bold;
+            display: block;
+    
+        }   
+        :root {
+            --text-color: #333;
+        }
+        .panel {
+            display: inline-block; 
+            width: 320px;
+            padding: 1em;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Verdana, sans-serif;
+
+        }
+        .inverted {
+            border-width: 0px;  /* NECESARIO después de .panel (esto es malo!) */
+            background-color: #111;
+            --text-color: #eee;  /* Redefinición! */
+        }
+        .panel > h2,
+        .panel > p {
+            margin: 0px;
+            color: var(--text-color);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h2>Esto es una prueba</h2>
+    <b>Esto es una prueba</b>
+
+    <div class="caja1">Caja 1</div>
+    <div class="caja2">Caja 2</div>
+<br>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+
+    <br>
+    <div class="texto">
+    <h3>Prueba CSS</h3>
+    </div>    
+    <div class="caja">Caja</div>
+    <div class="panel">
+        <h2>Panel normal</h2>
+        <p>Lorem ipsum non pariatur quod autem a voluptatem quasi totam voluptas.</p>
+      </div>
+      <div class="panel inverted">
+        <h2>Panel invertido</h2>
+        <p>Lorem ipsum non pariatur quod autem a voluptatem quasi totam voluptas.</p>
+      </div>
+</body>
+</html>

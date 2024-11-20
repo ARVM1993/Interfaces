@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>
+    <style>
+
+        .contenedor {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 250px;
+        }
+
+        .titulo {
+            background-image: linear-gradient(to right, #f700ff, #0011ff, #aab603, #2b630b);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gradientes {
+            border-width: 10px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #f700ff, #0011ff, #aab603, #2b630b) 1;
+            height: 100px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frase {
+            background-image: linear-gradient(to right, #f700ff, #0011ff, #aab603, #2b630b);
+            background-clip: text;
+            color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2 class="titulo">Prueba con colores Gradientes en un h1 --- Gradientes en un h1</h2>
+        
+        <div class="gradientes">
+            <h2 class="frase">Colores en un h2</h2>
+        </div>
+    </div>
+</body>
+</html>

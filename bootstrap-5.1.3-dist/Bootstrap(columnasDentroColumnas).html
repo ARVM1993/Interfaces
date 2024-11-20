@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Página Bootstrap</title>
+    </head>
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+        .row{
+            background-color: rgb(94, 94, 149);
+           
+        }
+        .columna{
+            background-color: greenyellow;
+            text-align: center;
+            border: 1px solid blue;
+        }
+        .columna-interior2{
+            background-color: aquamarine;
+        }
+
+
+
+    </style>
+        <div class="container"><!--Con container-fluid no respeta los margenes-->
+            <div class="row">
+                <div class="columna col-12 col-md-6">
+                    Columna 1
+                    <div class="row">
+                        <div class="columna-interior1 col-md-6"> Columna interior 1.1</div>
+                    <div class="columna-interior1 col-md-6"> Columna interior 1.2></div>
+
+                </div>
+                </div>
+                
+                <div class="columna col-6">
+                    Columna 2
+                    <div class="row">
+                        <div class="columna-interior2 col-md-6"> Columna intertior 2.1</div>
+                        <div class="columna-interior2 col-md-6"> Columna intertior 2.2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+            
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

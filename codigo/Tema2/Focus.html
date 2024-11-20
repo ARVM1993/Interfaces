@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 10px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .contenedor {
+        width: 200px;
+        height: 50px;
+        border: 1px solid red;
+        text-align: center;
+        display: flex;              /* Usar flexbox para centrar */
+        justify-content: center;    /* Centrar horizontalmente */
+        align-items: center;        /* Centrar verticalmente */
+        
+    }
+
+    .contenedor:focus {
+        background-color: blue;
+        margin: 10px;
+    }
+</style>
+<body>
+
+    <div class="contenedor" tabindex="0"> <!-- Corrected class name and added tabindex for focus -->
+        Insertar
+    </div>
+    
+</body>
+</html>

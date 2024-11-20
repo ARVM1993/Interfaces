@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        .radial-gradient {
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(circle, red, blue);
+            /* Gradiente circular desde el centro */
+        }
+
+        .ellipse-gradient {
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(ellipse, orange, yellow, green);
+            /* Gradiente en forma de elipse */
+        }
+
+        .offset-center-gradient {
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(circle at 20% 30%, purple, cyan);
+            /* Gradiente con el centro desplazado */
+        }
+    </style>
+</head>
+<body>
+    <h2>Radial Gradient (Circle)</h2>
+    <div class="radial-gradient"></div>
+
+    <h2>Radial Gradient (Ellipse)</h2>
+    <div class="ellipse-gradient"></div>
+
+    <h2>Offset Center Radial Gradient</h2>
+    <div class="offset-center-gradient"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex; /* Hacemos que el body sea un contenedor flex */
+            justify-content: center; /* Centrar elementos horizontalmente */
+            align-items: center; /* Centrar elementos verticalmente */
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0; /* Quitar margen predeterminado */
+        }
+
+        .container {
+            display: flex; /* Hacemos que el contenedor sea flex */
+            flex-direction: row; /* Disposición en fila */
+        }
+        
+
+        .item-blue {
+            background-color: blue;
+            width: 100px; /* Ancho del elemento */
+            height: 200px; /* Alto del elemento */
+            flex-grow: 10px; /* Base del tamaño del elemento */
+            margin: 10px; /* Margen alrededor del elemento */
+        }
+
+        .item-pink {
+            background-color: pink;
+            width: 100px; /* Ancho del elemento */
+            height: 200px; /* Alto del elemento */
+            flex-basis: 10px; /* Base del tamaño del elemento */
+            margin: 10px; /* Margen alrededor del elemento */
+        }
+
+        .item-orange {
+            background-color: orange;
+            width: 100px; /* Ancho del elemento */
+            height: 200px; /* Alto del elemento */
+            flex-basis: 10px; /* Base del tamaño del elemento */
+            margin: 10px; /* Margen alrededor del elemento */
+            flex-grow: 1; /* Permite que este elemento crezca para llenar el espacio disponible */
+            flex-shrink: 1; /* Permite que este elemento se encoja si es necesario */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-blue"></div>
+        <div class="item-pink"></div>
+        <div class="item-orange"></div>
+    </div>
+</body>
+</html>

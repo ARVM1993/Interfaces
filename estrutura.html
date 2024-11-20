@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout con Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "aside-left main aside-right"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr 1fr; /* Ancho de las columnas */
+            grid-template-rows: auto 1fr auto; /* Altura de las filas */
+            height: 100vh; /* Altura total de la ventana */
+            gap: 10px; /* Espaciado entre áreas */
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        aside:first-of-type {
+            grid-area: aside-left;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        aside:last-of-type {
+            grid-area: aside-right;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Opcional: Añadir un borde para visualizar las áreas */
+        header, footer, main, aside {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado</h1>
+    </header>
+
+    <aside>
+        <h2>Aside Izquierdo</h2>
+        <p>Contenido adicional o enlaces.</p>
+    </aside>
+
+    <main>
+        <h2>Contenido Principal</h2>
+        <p>Aquí va el contenido principal del sitio web.</p>
+    </main>
+
+    <aside>
+        <h2>Aside Derecho</h2>
+        <p>Más contenido o widgets.</p>
+    </aside>
+
+    <footer>
+        <p>Pie de página © 2024</p>
+    </footer>
+</body>
+</html>
