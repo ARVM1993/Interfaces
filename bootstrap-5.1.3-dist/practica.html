@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Bootstrap</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <style>
+
+        
+        .header {
+            background-color: pink;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            height: 10vh;
+        }
+
+        .main {
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            height: 20vh;
+
+        }
+
+        .aside {
+            background-color: lightgreen;
+            color: black;
+            padding: 20px;
+            height: 20vh;
+
+        }
+
+        .container-naranja {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            height: 20vh;
+        }
+
+        .footer {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-1">
+     
+        <div class="row">
+            <div class="col-12 header">Header - 12 Columnas</div>
+        </div>
+    
+        <div class="row my-2">
+           
+            <div class="col-12 col-md-8 main">Main - 8 Columnas</div>
+            <div class="col-12 col-md-4 aside">Aside - 4 Columnas</div>
+        </div>
+    
+        <div class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 container-naranja">Contenedor 1</div>
+            <div class="col-12 col-md-4 container-naranja">Contenedor 2</div>
+            <div class="col-12 col-md-4 container-naranja">Contenedor 3</div>
+        </div>
+    
+        <div class="row my-2">
+            <div class="col-12 footer">Footer - 12 Columnas</div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

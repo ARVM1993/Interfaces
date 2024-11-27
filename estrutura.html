@@ -25,6 +25,40 @@
             color: white;
             text-align: center;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            padding: 5px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #555;
         }
 
         footer {
@@ -39,12 +73,46 @@
             grid-area: main;
             background-color: #f9f9f9;
             padding: 20px;
+            display: flex; /* Usamos flexbox para alinear la lista */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        .menu {
+            list-style: none; /* Eliminar los puntos de la lista */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px; /* Espaciado entre los elementos */
+        }
+
+        .menu li {
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu li:hover {
+            background-color: #45a049;
         }
 
         aside:first-of-type {
             grid-area: aside-left;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
             background-color: #f0f0f0;
             padding: 20px;
+        }
+
+        aside:first-of-type > .top,
+        aside:first-of-type > .bottom {
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            padding: 10px;
         }
 
         aside:last-of-type {
@@ -53,7 +121,6 @@
             padding: 20px;
         }
 
-        /* Opcional: Añadir un borde para visualizar las áreas */
         header, footer, main, aside {
             border: 1px solid #ccc;
         }
@@ -62,16 +129,30 @@
 <body>
     <header>
         <h1>Encabezado</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">Buscar</button>
+        </div>
     </header>
 
     <aside>
-        <h2>Aside Izquierdo</h2>
-        <p>Contenido adicional o enlaces.</p>
+        <div class="top">
+            <h2>Parte Superior</h2>
+            <p>Contenido adicional o enlaces.</p>
+        </div>
+        <div class="bottom">
+            <h2>Parte Inferior</h2>
+            <p>Más contenido adicional.</p>
+        </div>
     </aside>
 
     <main>
-        <h2>Contenido Principal</h2>
-        <p>Aquí va el contenido principal del sitio web.</p>
+        <ul class="menu">
+            <li>Inicio</li>
+            <li>Contacto</li>
+            <li>Búsqueda</li>
+            <li>Menú</li>
+        </ul>
     </main>
 
     <aside>
