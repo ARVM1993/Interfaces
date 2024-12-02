@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Dos columnas: aside más estrecho que main */
+            grid-template-rows: 150px 1fr 150px; /* Header, contenido, footer */
+            height: 100vh; /* Altura total de la ventana */
+            
+        }
+
+        header {
+            grid-column: 1 / 2 span;
+            border: solid;
+            background-color: #d1e7dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside {
+            grid-column: 1; /* Ocupa la primera columna */
+            grid-row: 2; /* Ocupa la segunda fila */
+            background-color: #d1e7dd;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            grid-column: 2; /* Ocupa la segunda columna */
+            grid-row: 2; /* Ocupa la segunda fila */
+            background-color: #ffc107;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            grid-column: 1 / span 2; /* Ocupa ambas columnas */
+            grid-row: 3; /* Ocupa la última fila */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer>
+</body>
+</html>

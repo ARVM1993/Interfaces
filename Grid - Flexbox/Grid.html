@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: 1fr 10fr 1fr;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgb(19, 160, 179);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            grid-row: 1;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-row: 2;
+        }
+
+        main {
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+
+        aside {
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            grid-row: 3;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                grid-template-rows: auto auto auto; 
+            }
+
+            header {
+                font-size: 1.2em;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto; 
+            }
+
+            main, aside {
+                font-size: 1em;
+            }
+
+            footer {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, main, aside, footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Con Grid</header>
+    <div class="content">
+        <main>Main</main>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
