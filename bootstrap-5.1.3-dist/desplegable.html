@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <!-- Acordeón -->
+                <div class="accordion" id="lecciones">
+                    <!-- Ítem 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado-1">
+                            <button class="accordion-button" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#elemento-1"
+                                    aria-expanded="true"
+                                    aria-controls="elemento-1">
+                                Tema #1: Introducción
+                            </button>
+                        </h2>
+                        <div id="elemento-1" 
+                        class="accordion-collapse collapse show" 
+                        aria-labelledby="encabezado-1" 
+                        data-bs-parent="#lecciones">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam rem a debitis saepe nobis incidunt eos porro laudantium repellat necessitatibus deserunt, non libero culpa numquam magni alias iste. Molestiae!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado-2">
+                            <button class="accordion-button collapsed" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#elemento-2"
+                                    aria-expanded="false"
+                                    aria-controls="elemento-2">
+                                Tema #2: Conceptos Básicos
+                            </button>
+                        </h2>
+                        <div id="elemento-2" class="accordion-collapse collapse" aria-labelledby="encabezado-2" data-bs-parent="#lecciones">
+                            <div class="accordion-body">
+                                <p>Explora los conceptos más importantes de la programación. Este tema cubre las bases que necesitas para comenzar a entender cómo escribir código.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado-3">
+                            <button class="accordion-button collapsed" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#elemento-3"
+                                    aria-expanded="false"
+                                    aria-controls="elemento-3">
+                                Tema #3: Ejercicios Prácticos
+                            </button>
+                        </h2>
+                        <div id="elemento-3" class="accordion-collapse collapse" aria-labelledby="encabezado-3" data-bs-parent="#lecciones">
+                            <div class="accordion-body">
+                                <p>En este tema, trabajaremos en ejercicios prácticos para reforzar los conocimientos adquiridos en los temas anteriores. ¡Prepárate para poner tus habilidades a prueba!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
