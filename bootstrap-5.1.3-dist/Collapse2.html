@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(203, 197, 168);
+        }        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a href="#contenido-tab" class="nav-link active" data-bs-toggle="collapse" aria-controls="contenido-tab">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-tab" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-tab">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-tab" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-tab">Enlace 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-tab" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-tab">Enlace 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body collapse show" id="contenido-tab">
+                        <h5 class="card-title">Titulo</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis, neque minima soluta necessitatibus voluptates perspiciatis dignissimos veritatis sequi! Error maxime doloremque rerum minima.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#contenido-tab" aria-expanded="true" aria-controls="contenido-tab">Colapsar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                            <li class="nav-item">
+                                <a href="#contenido-pills" class="nav-link active" data-bs-toggle="collapse" aria-controls="contenido-pills">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-pills" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-pills">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-pills" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-pills">Enlace 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contenido-pills" class="nav-link" data-bs-toggle="collapse" aria-controls="contenido-pills">Enlace 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body collapse show" id="contenido-pills">
+                        <h5 class="card-title">Titulo</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis, neque minima soluta necessitatibus voluptates perspiciatis dignissimos veritatis sequi! Error maxime doloremque rerum minima.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#contenido-pills" aria-expanded="true" aria-controls="contenido-pills">Colapsar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
