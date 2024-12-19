@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        label {
+            color: yellow;
+        }
+
+      
+    </style>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="form-container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Aitor" aria-label="Nombre">
+                        </div>
+
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" id="correo" class="form-control" placeholder="correo@correo.com" aria-label="Correo">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="label-notas" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="label-notas" aria-label="Notas"></textarea>
+                        </div>
+
+                        <div class="col-12 col-md-3 mb-3">
+                            <label for="estado-civil" class="form-label">Estado Civil</label>
+                            <div class="form-check">
+                                <input type="radio" name="mi-radio-button" class="form-check-input" id="radio-1">
+                                <label for="radio-1" class="form-check-label">Solter@</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="mi-radio-button" class="form-check-input" id="radio-2">
+                                <label for="radio-2" class="form-check-label">Casad@</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3 mb-3">
+                            <label for="pais" class="form-label">País</label>
+                            <select name="pais" id="pais" class="form-select">
+                                <option value="italia">Italia</option>
+                                <option value="españa">España</option>
+                                <option value="francia">Francia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="form-check d-flex justify-content-center">
+                                <input type="checkbox" class="form-check-input" id="aceptar-condiciones">
+                                <label class="form-check-label" for="aceptar-condiciones">Acepto los términos y condiciones</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary w-50">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
